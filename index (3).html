@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog What's' new?</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      :root {
+        --verde: #5ca793;
+        --rosa: #a7084d;
+        --rosa-2:#db4b8a;
+        --branco: #f9f8f4;
+        --azul: #bce5e9;
+        --bege: #ebd0ae;
+        --preto: #181818;
+        --cinza:#636161;
+        --azul-2: #9bcec0;
+      }
+
+      body {
+        background-color: rgb(190, 224, 253);
+        max-width: 900px;
+        margin: auto;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      .forma {
+        position: absolute;
+        pointer-events: none;
+      }
+
+      .forma1 {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          var(--preto) 0 25%,
+          var(--rosa-2) 26% 38%,
+          var(--preto) 39% 44%,
+          var(--bege) 45% 5%,
+          var(--rosa-2) 53% 100%
+        );
+        top: 530px;
+        left: -250px;
+        opacity: 88%;
+      }
+
+      .forma2 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background:
+        radial-gradient(
+            circle,
+            var(--verde) 0 22%,
+            var(--bege) 23% 34%,
+            var(--rosa) 35% 42%,
+            var(--bege) 4% 5%,
+            var(--verde) 51% 100%
+        );
+    top: 80px;
+    right: -200px;
+     opacity: 88%;
+      }
+
+      .forma3 {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background:
+        radial-gradient(
+            circle,
+            var(--rosa) 0 22%,
+            var(--bege) 23% 34%,
+            var(--rosa) 35% 42%,
+            var(--bege) 4% 5%,
+            var(--rosa) 51% 100%
+        );
+    top: 700px;
+    right: -255px;
+     opacity: 88%;
+      }
+
+      .estrela-1{
+        position: absolute;
+        color:#a7084d;
+        font-size: 146px;
+        top: 1px;
+        left: -21%;
+        transform: rotate(-20deg);
+         opacity: 88%;
+      }
+
+      .estrela-2{
+        position: absolute;
+        color:#a7084d;
+        font-size: 106px;
+        top: 119px;
+        left: -16%;
+           transform: rotate(-20deg);
+            opacity: 88%;
+      }
+
+      .estrela-3{
+        position: absolute;
+        color:#a7084d;
+        font-size: 96px;
+        top: 59px;
+        left: -11%;
+           transform: rotate(-20deg);
+            opacity: 88%;
+      }
+
+      .estrela-4{
+        position: absolute;
+        color:#a7084d;
+        font-size: 86px;
+        top: 139px;
+        left: -8%;
+           transform: rotate(-20deg);
+            opacity: 88%;
+      }
+      .anel-1{
+        position: absolute;
+        top: -95px;
+        right: -370px;
+        width: 120px;
+        height: 120px;
+        border: 12px solid var(--verde);
+        border-radius: 50%;
+      }
+      .anel-2{
+        position: absolute;
+        top: -75px;
+        right: -360px;
+        width: 160px;
+        height: 160px;
+        border: 12px solid var(--verde);
+        border-radius: 50%;
+      }
+
+      header {
+        color: #a7084d;
+
+        text-align: center;
+        background-color: #9bcec0;
+        padding: 2px;
+      }
+
+      .whats-new {
+        font-family: "Barlow Condensed";
+        font-weight: 700;
+        font-size: 95px;
+        text-align: center;
+        color: #a7084d;
+        letter-spacing: -2px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+
+      .cultura {
+        font-family: "Barlow Condensed";
+        font-weight: 500;
+        font-size: 50px;
+      }
+
+      main {
+        background-color: var(--azul-2);
+       width: 80%;
+       margin: 0 auto;
+      }
+
+      .bem-vindos {
+        color: #a7084d;
+        font-family: "Barlow Condensed";
+        font-weight: 600;
+        font-size: 50px;
+        text-align: center;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .por-mim{
+        color: #a7084d;
+        font-family: "Barlow Condensed";
+        font-weight: 600;
+        font-size: 25px;
+        text-align: left;
+        padding: 10px;
+        margin-left: 30px;
+        margin-bottom: -15px;
+      }
+
+      .texto-1 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #a7084d;
+        padding: 5px;
+        margin-left: 30px;
+        font-size: 30px;
+        font-weight: 500;
+      }
+      .botoes{
+        display: flex;
+        gap: 35px;
+        margin-left: 30px;
+      }
+      .like button ,
+      .deslike button{
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+        border: none;
+        background: none;
+        color: #a7084d;
+      }
+      .like svg,
+      .deslike svg {
+        width: 50px;
+        height: 50px;
+      }
+      .like span,
+      .deslike span{
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="whats-new">What's new?</h1>
+      <h1 class="cultura">Cultura pop e tudo de bom!</h1>
+    </header>
+    <div class="forma forma1"></div>
+    <div class="forma forma2"></div>
+    <div class="forma forma3"></div>
+    <div class="estrela-1">★</div>
+    <div class="estrela-2">★</div>
+    <div class="estrela-3">★</div>
+    <div class="estrela-4">★</div>
+    <div class="anel-1"></div>
+     <div class="anel-2"></div>
+
+    <main>
+      <article>
+
+      <h1 class="bem-vindos">Bem vindos ao What's new!</h1>
+      <div class="por-mim"> <h2>Por: Aline Albuquerque</h2></div>
+      <div class="introduçao"></div>
+        <div class="texto-1">
+
+          <p>
+            Bem vindos ao meu site sobre cultura pop! Aqui quero compartilhar
+            bastidores de filmes, histórias inimáginaveis de bandas, fofocas
+            artisticas, cobertura de premiações e eventos aguardados, recomendações de música e filmes que você não pode perder e muito mais. Vem acompanhar!
+          </p>
+        </div>
+        </div>
+      </div>
+      <div class="botoes">
+      <div class="like"> 
+         <button><svg xmlns=<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#a7084d"><path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/></svg><span>0</span></button>  
+      </div>
+
+      <div class="deslike"> 
+         <button><svg xmlns=<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#a7084d"><path d="M240-840h440v520L400-40l-50-50q-7-7-11.5-19t-4.5-23v-14l44-174H120q-32 0-56-24t-24-56v-80q0-7 2-15t4-15l120-282q9-20 30-34t44-14Zm360 80H240L120-480v80h360l-54 220 174-174v-406Zm0 406v-406 406Zm80 34v-80h120v-360H680v-80h200v520H680Z"/></svg><span>0</span></button>  
+      </div>
+      </div>
+</article>
+    </main>
+  </body>
+  <script>
+   const botoes = document.querySelectorAll("button");
+botoes.forEach(function(botao) {
+botao.addEventListener("click", botaoClicado);
+
+function botaoClicado() {
+console.log("fui clicado");
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+});
+  </script>
+</html>
