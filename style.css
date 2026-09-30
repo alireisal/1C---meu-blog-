@@ -287,9 +287,8 @@
     margin-bottom: 10px;
   }
 
-  article {
+  .article-1 {
     display: flex;
-    border: 1px solid #183C63;
     margin: 16px;
     gap: 16px;
     padding: 16px;
@@ -303,7 +302,7 @@
     color: #a7084d;
     font-family: "Barlow Condensed";
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
     text-align: left;
     padding: 10px;
     margin-left: 30px;
